@@ -1,0 +1,15 @@
+#N canvas 827 239 527 327 12;
+#X obj 249 109 inlet~;
+#X obj 249 289 outlet~;
+#X obj 249 189 delwrite~ \$0-delay-1 \$1;
+#X obj 249 219 delread~ \$0-delay-1 \$1;
+#X obj 186 203 *~ \$2;
+#X obj 416 203 *~ \$3;
+#X obj 249 139 +~;
+#X connect 0 0 6 0 empty;
+#X connect 3 0 1 0 empty;
+#X connect 3 0 5 0 empty;
+#X connect 4 0 1 0 empty;
+#X connect 5 0 6 1 empty;
+#X connect 6 0 2 0 empty;
+#X connect 6 0 4 0 empty;
