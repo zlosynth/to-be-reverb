@@ -6,6 +6,7 @@
 #X obj 186 203 *~ \$2;
 #X obj 416 203 *~ \$3;
 #X obj 249 139 +~;
+#X obj 309 109 inlet delay;
 #X connect 0 0 6 0 empty;
 #X connect 3 0 1 0 empty;
 #X connect 3 0 5 0 empty;
@@ -13,3 +14,4 @@
 #X connect 5 0 6 1 empty;
 #X connect 6 0 2 0 empty;
 #X connect 6 0 4 0 empty;
+#X connect 7 0 3 0 empty;
